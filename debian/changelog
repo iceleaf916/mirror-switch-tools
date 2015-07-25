@@ -1,0 +1,11 @@
+mirror-switch-tools (1.0.1) unstable; urgency=medium
+
+  * update confirm messgae 
+
+ -- Kaisheng Ye <kaisheng.ye@gmail.com>  Sun, 26 Jul 2015 00:36:06 +0800
+
+mirror-switch-tools (1.0.0) unstable; urgency=low
+
+  * Init
+
+ -- iceleaf916 <kaisheng.ye@gmail.com>  Fri, 25 Jul 2015 10:51:03 +0800

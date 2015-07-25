@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Mirror Switch Tools
+Comment=Mirror Switch Tools for Deepin
+Exec=gksu mirror-switch-tools
+Icon=deepin-logo
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;Utility;
+StartupNotify=true

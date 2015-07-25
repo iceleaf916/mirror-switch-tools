@@ -1,0 +1,11 @@
+Package: mirror-switch-tools
+Version: 1.0.1
+Architecture: all
+Maintainer: iceleaf916 <kaisheng.ye@gmail.com>
+Installed-Size: 42
+Depends: python, gksu
+Section: admin
+Priority: optional
+Homepage: https://github.com/Deepin
+Description: Mirror switch tools
+ Mirror switch tools for Deepin
