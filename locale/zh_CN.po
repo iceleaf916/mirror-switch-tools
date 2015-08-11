@@ -21,20 +21,20 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: ../src/main.py:55
-msgid "Deepin 2014 Test Mirror Switching Tool"
-msgstr "Deepin 2014 测试源切换工具"
+msgid "deepin Test Mirror Switching Tool"
+msgstr "deepin测试源切换工具"
 
 #: ../src/main.py:63 ../src/main.py:64
-msgid "Choose the Source:"
-msgstr "选择您想切换的源:"
+msgid "Select the mirror:"
+msgstr "请选择镜像源："
 
 #: ../src/main.py:71 ../src/main.py:72
 msgid "Username:"
-msgstr "用户名:"
+msgstr "用户名："
 
 #: ../src/main.py:74 ../src/main.py:75
 msgid "Password:"
-msgstr "密码:"
+msgstr "密码："
 
 #: ../src/main.py:97 ../src/main.py:98
 msgid "Switch"
@@ -45,46 +45,41 @@ msgid "Exit"
 msgstr "退出"
 
 #: ../src/main.py:124 ../src/main.py:125
-msgid ""
-"Note: Your system is not detected Deepin 2014, the tool can only run under "
-"Deepin 2014 system"
-msgstr ""
-"注意：检测到您的系统不是Deepin 2014，该工具只能在Deepin 2014系统下运行。"
+msgid "Note: Detecting that your system is not deepin 2014. The tool can only run in deepin 2014."
+msgstr "注意：检测到您的系统不是deepin 2014，本工具只能在deepin 2014系统下运行。"
 
 #: ../src/main.py:149 ../src/main.py:150
 msgid "Username can not be empty"
 msgstr "用户名不能为空"
 
 #: ../src/main.py:151 ../src/main.py:152
-msgid "Password can not be blank"
+msgid "Password can not be empty"
 msgstr "密码不能为空"
 
 #: ../src/main.py:153 ../src/main.py:69 ../src/main.py:154
-msgid "Test source"
-msgstr "测试源"
+msgid "Internal test mirror"
+msgstr "内部测试源"
 
 #: ../src/main.py:157 ../src/main.py:164 ../src/main.py:188 ../src/main.py:158
 #: ../src/main.py:165 ../src/main.py:189
 msgid "Switch successfully!"
-msgstr "切换成功!"
+msgstr "切换成功！"
 
 #: ../src/main.py:159 ../src/main.py:166 ../src/main.py:160 ../src/main.py:167
 msgid "Failed to switch!"
-msgstr "切换失败!"
+msgstr "切换失败！"
 
 #: ../src/main.py:161 ../src/main.py:87 ../src/main.py:162
-msgid "Official source"
-msgstr "官方源"
+msgid "Official stable mirror"
+msgstr "官方稳定源"
 
 #: ../src/main.py:170 ../src/main.py:171
-msgid ""
-"file will be overwitten, are you sure the current system software source "
-"switch to "
-msgstr "文件会被覆盖，您确定要把当前系统的软件源切换到"
+msgid "file will be overwitten. Are you sure to switch the current system mirror to"
+msgstr "文件会被覆盖，您确定要把当前系统的镜像源切换到"
 
 #: ../src/main.py:171 ../src/main.py:172
 msgid "Note:"
-msgstr "请注意:"
+msgstr "请注意："
 
 #: ../src/main.py:191 ../src/main.py:192
 msgid "Error:"

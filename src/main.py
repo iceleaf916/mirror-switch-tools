@@ -83,7 +83,7 @@ class MainWindow(gtk.Window):
     def __init__(self):
         super(MainWindow, self).__init__()
 
-        self.set_title(_("Deepin 2014 Test Mirror Switching Tool"))
+        self.set_title(_("deepin Test Mirror Switching Tool"))
         #self.set_size_request(404, 160)
         self.set_position(gtk.WIN_POS_CENTER)
         self.set_resizable(False)
@@ -91,12 +91,12 @@ class MainWindow(gtk.Window):
 
         main_vbox = gtk.VBox(False, 5)
 
-        title_label = gtk.Label(_("Choose the Source:"))
+        title_label = gtk.Label(_("Select the mirror:"))
         title_label_align = gtk.Alignment(0, 0, 0, 0)
         title_label_align.add(title_label)
 
         group_radio = gtk.RadioButton()
-        self.test_mirror_radio = gtk.RadioButton(group_radio, _("Test source"))
+        self.test_mirror_radio = gtk.RadioButton(group_radio, _("Internal test mirror"))
         self.test_mirror_radio.set_active(True)
 
         username_label = gtk.Label(_("Username:"))
@@ -114,7 +114,7 @@ class MainWindow(gtk.Window):
         test_mirror_extra_hbox_align.set_padding(0, 0, 24, 0)
         test_mirror_extra_hbox_align.add(test_mirror_extra_hbox)
 
-        self.official_mirror_radio = gtk.RadioButton(group_radio, _("Official source"))
+        self.official_mirror_radio = gtk.RadioButton(group_radio, _("Official stable mirror"))
 
         radio_vbox = gtk.VBox()
         radio_vbox.pack_start(self.test_mirror_radio)
@@ -152,7 +152,7 @@ class MainWindow(gtk.Window):
         else:
             error_label = gtk.Label()
             error_label.set_line_wrap(True)
-            error_label.set_markup('<span foreground="red">%s</span>' % (_("Note: Your system is not detected Deepin 2014, the tool can only run under Deepin 2014 system")))
+            error_label.set_markup('<span foreground="red">%s</span>' % (_("Note: Detecting that your system is not deepin 2014. The tool can only run in deepin 2014.")))
             main_vbox_align.add(error_label)
         self.add(main_vbox_align)
 
@@ -179,9 +179,9 @@ class MainWindow(gtk.Window):
             if username == "":
                 self.show_tip("<span foreground='red'>%s</span>" % (_("Username can not be empty")))
             elif password == "":
-                self.show_tip("<span foreground='red'>%s</span>" % (_("Password can not be blank")))
+                self.show_tip("<span foreground='red'>%s</span>" % (_("Password can not be empty")))
             else:
-                res = self.show_mirror_change_confirm(_("Test source"))
+                res = self.show_mirror_change_confirm(_("Internal test mirror"))
                 if res == gtk.RESPONSE_OK:
                     host = test_mirror_host % (username, password)
                     if self.change_source_list(host):
@@ -189,7 +189,7 @@ class MainWindow(gtk.Window):
                     else:
                         self.show_tip("<span foreground='red'>%s</span>" % (_("Failed to switch!")))
         else:
-            res = self.show_mirror_change_confirm(_("Official source"))
+            res = self.show_mirror_change_confirm(_("Official stable mirror"))
             if res == gtk.RESPONSE_OK:
                 if self.change_source_list(official_mirror_host):
                     self.show_tip("<span foreground='blue'>%s</span>" %(_("Switch successfully!")))
@@ -198,7 +198,7 @@ class MainWindow(gtk.Window):
 
     def show_mirror_change_confirm(self, mirror_name):
         dialog = gtk.MessageDialog(self, gtk.DIALOG_MODAL, gtk.MESSAGE_QUESTION, gtk.BUTTONS_OK_CANCEL)
-        dialog.format_secondary_markup('/etc/apt/sources.list %s<span foreground="blue">“%s”</span>?' % (_("file will be overwitten, are you sure the current system software source switch to "), mirror_name))
+        dialog.format_secondary_markup('/etc/apt/sources.list %s<span foreground="blue">“%s”</span>?' % (_("file will be overwitten. Are you sure to switch the current system mirror to"), mirror_name))
         dialog.set_markup(_("Note:"))
         res = dialog.run()
         dialog.destroy()
