@@ -1,7 +1,7 @@
 [Desktop Entry]
-Name=Mirror Switch Tools
-Comment=Mirror Switch Tools for Deepin
-Exec=gksu mirror-switch-tools
+Name=Mirror Switching Tool
+Comment=Mirror Switching Tool for Deepin
+Exec=gksu mirror-switching-tool
 Icon=deepin-logo
 Terminal=false
 X-MultipleArgs=false

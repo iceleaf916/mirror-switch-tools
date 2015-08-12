@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-11 08:53+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/main.py:55
+msgid "Deepin 2014 Test Mirror Switching Tool"
+msgstr ""
+
+#: ../src/main.py:63
+msgid "Choose the Source:"
+msgstr ""
+
+#: ../src/main.py:68 ../src/main.py:153
+msgid "Test source"
+msgstr ""
+
+#: ../src/main.py:71
+msgid "Username:"
+msgstr ""
+
+#: ../src/main.py:74
+msgid "Password:"
+msgstr ""
+
+#: ../src/main.py:86 ../src/main.py:161
+msgid "Official source"
+msgstr ""
+
+#: ../src/main.py:97
+msgid "Switch"
+msgstr ""
+
+#: ../src/main.py:100
+msgid "Exit"
+msgstr ""
+
+#: ../src/main.py:124
+msgid ""
+"Note: Your system is not detected Deepin 2014, the tool can only run under "
+"Deepin 2014 system"
+msgstr ""
+
+#: ../src/main.py:149
+msgid "Username can not be empty"
+msgstr ""
+
+#: ../src/main.py:151
+msgid "Password can not be blank"
+msgstr ""
+
+#: ../src/main.py:157 ../src/main.py:164 ../src/main.py:188
+msgid "Switch successfully!"
+msgstr ""
+
+#: ../src/main.py:159 ../src/main.py:166
+msgid "Failed to switch!"
+msgstr ""
+
+#: ../src/main.py:170
+msgid ""
+"file will be overwitten, are you sure the current system software source "
+"switch to "
+msgstr ""
+
+#: ../src/main.py:171
+msgid "Note:"
+msgstr ""
+
+#: ../src/main.py:191
+msgid "Error:"
+msgstr ""
